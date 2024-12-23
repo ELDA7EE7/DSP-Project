@@ -8,8 +8,8 @@ ax = None
 def upload_file():
     global signal_data
     signal_path=upload_file_path()
-    signal_data= process_file(signal_path)
     #preprocess the file here
+    signal_data= process_file(signal_path)
     
 def upload_file_path():
     file_path = filedialog.askopenfilename(filetypes=[("Text files", "*.txt")])
